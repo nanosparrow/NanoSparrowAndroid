@@ -1,2 +1,2 @@
-# NanoSparrow_Android
+# NanoSparrowAndroid
 Android Code for NanoSparrow
