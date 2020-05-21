@@ -1,4 +1,4 @@
-package com.nanosparrow.nanosparrow.ui.category
+package com.nanosparrow.nanosparrow.ui.search
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -9,24 +9,24 @@ import android.view.ViewGroup
 
 import com.nanosparrow.nanosparrow.R
 
-class CategoryFragment : Fragment() {
+class SearchFragment : Fragment() {
 
     companion object {
-        fun newInstance() = CategoryFragment()
+        fun newInstance() = SearchFragment()
     }
 
-    private lateinit var viewModel: CategoryViewModel
+    private lateinit var viewModel: SearchViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.category_fragment, container, false)
+        return inflater.inflate(R.layout.search_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(CategoryViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(SearchViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

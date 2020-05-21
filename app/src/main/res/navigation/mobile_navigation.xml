@@ -3,24 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_featured">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.nanosparrow.nanosparrow.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_featured"
+        android:name="com.nanosparrow.nanosparrow.ui.featured.FeaturedFragment"
+        android:label="@string/title_featured"
+        tools:layout="@layout/featured_fragment"/>
 
     <fragment
         android:id="@+id/navigation_category"
         android:name="com.nanosparrow.nanosparrow.ui.category.CategoryFragment"
         android:label="@string/title_category"
-        tools:layout="@layout/fragment_category" />
+        tools:layout="@layout/category_fragment" />
 
     <fragment
-        android:id="@+id/navigation_me"
-        android:name="com.nanosparrow.nanosparrow.ui.me.MeFragment"
-        android:label="@string/title_me"
-        tools:layout="@layout/fragment_me" />
+        android:id="@+id/navigation_search"
+        android:name="com.nanosparrow.nanosparrow.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/search_fragment" />
 
 </navigation>
